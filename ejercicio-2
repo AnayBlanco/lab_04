@@ -1,0 +1,6 @@
+def calcular_diferencias(temperaturas):
+    diferencias = []
+    for i in range(len(temperaturas) - 1):
+        diferencia = temperaturas[i + 1] - temperaturas[i]
+        diferencias.append(diferencia)
+    return diferencias 

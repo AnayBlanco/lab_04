@@ -1,0 +1,9 @@
+def eliminar_numeros_repetidos(lista):
+     lista_sin_repetidos = []
+     for numero in lista:
+         if numero not in lista_sin_repetidos:
+             lista_sin_repetidos.append(numero)
+     return lista_sin_repetidos
+ 
+entrada = [4, 2, 4, 7, 2, 9]
+print(eliminar_numeros_repetidos(entrada))  # Salida: [4, 2, 7, 9]

@@ -1,0 +1,9 @@
+def obtener_posiciones(lista, objectivo):
+    posiciones = []
+    for i in range(len(lista)):
+        if lista[i] == objectivo:
+            posiciones.append(i)
+    return posiciones
+prueba = [1, 2, 3, 4, 2, 5, 2]
+objetivo = 4
+print(obtener_posiciones(prueba, objetivo))  # Salida: [0, 2, 4]
